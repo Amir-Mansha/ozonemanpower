@@ -71,54 +71,54 @@
                                 </div>
                                 <!-- menu -->
                                     <nav class="main-menu menu-mobile" id="menu">
-                                    <ul class="menu">
-                                        <li>
-                                            <a href="index.php">Home</a>
-                                            
-                                        </li>
-                                        <li class="mega-menu-item">
-                                            <a href="#" class="mega-menu-link">Services</a>
-                                            <ul class="mega-submenu">
-                                                
-                                                <li><a href="medical-agency.php">Medical Recruitment</a></li>
-                                              
-                                                <li><a href="industry-recuritment.php">Industry Recuritment</a></li>
-                                                <li><a href="Ozone_profile_2.9 mb.pdf">Download Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-item">
-                                            <a href="#" class="mega-menu-link">News</a>
-                                            <ul class="mega-submenu">
-                                                
-                                                <li><a href="pakistan-news.php">Pakistan Today News</a></li>
-                                                <li><a href="india-news.php">India Today News</a></li>
-                                                <li><a href="canada-news.php">Canada Today News</a></li>
-                                                <li><a href="united-kingdom-news.php">United Kingdom Today News</a></li>
-                                                <li><a href="china-news.php">China Today News</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="mega-menu-item">
-                                            <a href="#" class="mega-menu-link">Company</a>
-                                            <ul class="mega-submenu">
-                                                
+                                        <ul class="menu">
                                             <li>
-                                            <a href="team.php">Our Team</a>
+                                                <a href="index.php">Home</a>
+                                                
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-menu-link">Services</a>
+                                                <ul class="mega-submenu">
+                                                    
+                                                    <li><a href="medical-agency.php">Medical Recruitment</a></li>
+                                                
+                                                    <li><a href="industry-recuritment.php">Industry Recuritment</a></li>
+                                                    <li><a href="Ozone_profile_2.9 mb.pdf">Download Profile</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-menu-link">News</a>
+                                                <ul class="mega-submenu">
+                                                    
+                                                    <li><a href="pakistan-news.php">Pakistan Today News</a></li>
+                                                    <li><a href="india-news.php">India Today News</a></li>
+                                                    <li><a href="canada-news.php">Canada Today News</a></li>
+                                                    <li><a href="united-kingdom-news.php">United Kingdom Today News</a></li>
+                                                    <li><a href="china-news.php">China Today News</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="mega-menu-item">
+                                                <a href="#" class="mega-menu-link">Company</a>
+                                                <ul class="mega-submenu">
+                                                    
+                                                <li>
+                                                <a href="team.php">Our Team</a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="about-us.php">About Us</a>
+                                                
+                                            </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="contact-us-1.php">Contact Us</a>
+                                                
+                                            </li>
                                             
-                                        </li>
-                                        <li>
-                                            <a href="about-us.php">About Us</a>
-                                            
-                                        </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="contact-us-1.php">Contact Us</a>
-                                            
-                                        </li>
-                                        
-                                    </ul>
-                                </nav>
+                                        </ul>
+                                    </nav>
                                 <div class="header_extra d-flex flex-row align-items-center justify-content-end">
                                     <div class="header_search">
                                         <a href="#" class="btn-default search_btn"><i class="ti ti-search"></i></a>
@@ -131,7 +131,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- site-navigation end-->
+                        </div>
+                        <!-- site-navigation end-->
                     </div>
                 </div>
             </div>

@@ -44,7 +44,8 @@
                 </div>
             </div>
         </div>
-    </div><!-- top_bar end-->
+    </div>
+    <!-- top_bar end-->
     <!-- site-header-menu -->
     <div id="site-header-menu" class="site-header-menu cmt-bgcolor-white">
         <div class="site-header-menu-inner cmt-stickable-header">

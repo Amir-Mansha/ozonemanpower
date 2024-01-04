@@ -65,21 +65,21 @@
                                 <div>Ozone Manpower Overseas Employment Promoters</div>
                             </div>
                             <div class="d-flex flex-row">
-                                <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                <div class="btn-show-menu-mobile menubar menubar--squeeze" @click="toggleMenu">
                                     <span class="menubar-box">
                                         <span class="menubar-inner"></span>
                                     </span>           
                                 </div>
                                 <!-- menu -->
-                                    <nav class="main-menu menu-mobile" id="menu">
-                                        <ul class="menu">
+                                    <nav v-show="isMenuVisible"  class="main-menu menu-mobile" id="menu">
+                                        <ul class="menu" >
                                             <li>
                                                 <a href="index.php">Home</a>
                                                 
                                             </li>
-                                            <li class="mega-menu-item">
+                                            <li class="mega-menu-item" @click="showElseSiblings">
                                                 <a href="#" class="mega-menu-link">Services</a>
-                                                <ul class="mega-submenu">
+                                                <ul class="mega-submenu" v-show="siblingChild">
                                                     
                                                     <li><a href="medical-agency.php">Medical Recruitment</a></li>
                                                 
@@ -146,6 +146,20 @@
 <script>
 export default {
     name: "AppHeader",
+    data() {
+        return {
+            isMenuVisible: false,
+            siblingChild: false,
+        }
+    },
+    methods: {
+    toggleMenu() {
+      this.isMenuVisible = !this.isMenuVisible;
+    },
+    showElseSiblings() {
+        this.siblingChild = !this.siblingChild;
+    }
+  },
 }
 </script>
 <style>

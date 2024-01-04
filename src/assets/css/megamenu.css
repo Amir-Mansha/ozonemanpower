@@ -215,7 +215,7 @@ ul.menu-col li a:focus{
 
 
     nav.main-menu{
-        display: none ;
+        /* display: none ; */
         max-height: 10000px;
         position: absolute;
         box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);

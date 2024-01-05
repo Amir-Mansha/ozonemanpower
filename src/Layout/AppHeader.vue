@@ -37,7 +37,7 @@
                         <div class="cmt-bg cmt-col-bgcolor-yes cmt-right-span cmt-bgcolor-skincolor pl-20">
                             <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
                             <div class="layer-content">
-                                <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>+92 3076999777</div>
+                                <div class="top_bar_contact_item"><div class="top_bar_icon"><i class="fa fa-phone"></i></div>+92 0000000000</div>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                                 <div>Ozone Manpower Overseas Employment Promoters</div>
                             </div>
                             <div class="d-flex flex-row">
-                                <div class="btn-show-menu-mobile menubar menubar--squeeze" @click="toggleMenu">
+                                <div class="btn-show-menu-mobile menubar menubar--squeeze" @click="toggleMenu" v-if="isMobile">
                                     <span class="menubar-box">
                                         <span class="menubar-inner"></span>
                                     </span>           
@@ -145,22 +145,41 @@
 </template>
 <script>
 export default {
-    name: "AppHeader",
-    data() {
-        return {
-            isMenuVisible: false,
-            siblingChild: false,
-        }
-    },
-    methods: {
+  name: "AppHeader",
+  data() {
+    return {
+      isMenuVisible: false,
+      siblingChild: false,
+      isMobile: true,
+    };
+  },
+  mounted() {
+    this.updateIsMobile();
+    window.addEventListener("resize", this.updateIsMobile);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.updateIsMobile);
+  },
+  methods: {
     toggleMenu() {
       this.isMenuVisible = !this.isMenuVisible;
     },
     showElseSiblings() {
-        this.siblingChild = !this.siblingChild;
+      this.siblingChild = !this.siblingChild;
+    },
+      updateIsMobile() {
+    const newIsDestop = window.innerWidth >= 700;
+    
+    console.log('newIsDestop' );
+
+    if (newIsDestop) {
+      this.isMenuVisible = newIsDestop;
     }
   },
-}
+  },
+};
 </script>
+
 <style>
+  /* Add your styles if needed */
 </style>
